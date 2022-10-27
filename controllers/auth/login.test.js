@@ -5,7 +5,6 @@ require("dotenv").config();
 
 const app = require("../../app");
 const { User } = require("../../models/user");
-const { response } = require("../../app");
 
 const { DB_HOST, PORT } = process.env;
 

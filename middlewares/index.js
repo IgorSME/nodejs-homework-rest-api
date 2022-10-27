@@ -3,6 +3,7 @@ const ctrlWrapper = require("./ctrlWrapper");
 const RequestError = require("./RequestError");
 const isValidId = require("./isValidId");
 const authToken = require("./authToken");
+const upload = require("./upload");
 
 module.exports = {
   validation,
@@ -10,4 +11,5 @@ module.exports = {
   RequestError,
   isValidId,
   authToken,
+  upload,
 };

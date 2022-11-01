@@ -15,7 +15,7 @@ const verify = async (req, res) => {
   const mail = {
     to: email,
     subject: "Email verification",
-    html: `<a target ="_blank" href="http://localhost:3000/api/users/verify/:${user.verificationToken}"> Verify email </a>`,
+    html: `<a target ="_blank" href="http://localhost:3000/api/users/verify/${user.verificationToken}"> Verify email </a>`,
   };
   await sendEmail(mail);
   res.json({

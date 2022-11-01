@@ -4,7 +4,6 @@ const { NotFound } = require("http-errors");
 const verifyEmail = async (req, res) => {
   const { verificationToken } = req.params;
   const user = await User.findOne({ verificationToken });
-  console.log(user);
   if (!user) {
     throw NotFound();
   }
